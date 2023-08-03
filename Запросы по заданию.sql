@@ -123,3 +123,39 @@
 --     author.author_fullname
 
 -- ORDER BY total DESC
+
+-- Определить среднее количество прочитанных страниц читателем за день.
+
+-- SELECT
+
+--     reader_fullname,
+
+--     book_name,
+
+--     book_list / avg( (
+
+--             DATE_PART('day', cardbook.cardbook_off) - date_part('day', cardbook.cardbook_on)
+
+--         )
+
+--     ) AS total_day
+
+-- FROM cardbook
+
+--     JOIN public.book b ON b.book_id = cardbook.book_id
+
+--     JOIN public.reader r ON r.reader_id = cardbook.reader_id
+
+-- WHERE cardbook_off IS NOT NULL
+
+-- GROUP BY
+
+--     reader_fullname,
+
+--     book_name,
+
+--     book_list,
+
+--     r.reader_id
+
+-- ORDER BY r.reader_id
