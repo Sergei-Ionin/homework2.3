@@ -175,3 +175,15 @@
 --     JOIN public.book b ON b.book_id = lostbook.book_id
 
 --     JOIN public.reader r ON r.reader_id = lostbook.reader_id
+
+-- При потере книг количество доступных книг фонда меняется.Напишите sql запрос на обновление соответствующей информации.
+
+-- UPDATE book
+
+-- SET
+
+--     book_ex = book_ex - lostbook_col
+
+-- FROM lostbook
+
+-- WHERE book.book_id = lostbook.book_id
