@@ -159,3 +159,19 @@
 --     r.reader_id
 
 -- ORDER BY r.reader_id
+
+-- Про
+
+-- Напишите sql запрос, который определяет, терял ли определенный читатель книги
+
+-- SELECT
+
+--     reader_fullname,
+
+--     book_name
+
+-- FROM lostbook
+
+--     JOIN public.book b ON b.book_id = lostbook.book_id
+
+--     JOIN public.reader r ON r.reader_id = lostbook.reader_id
