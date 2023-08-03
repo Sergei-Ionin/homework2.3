@@ -103,3 +103,23 @@
 --     isdat_name
 
 -- ORDER BY total DESC
+
+-- Определить самого издаваемого автора.
+
+-- select
+
+--     author.author_fullname,
+
+--     count(author.author_fullname) as total
+
+-- FROM book
+
+--     LEFT JOIN author_book ON book.book_id = author_book.book_id
+
+--     LEFT JOIN author ON author_book.author_id = author.author_id
+
+-- GROUP BY
+
+--     author.author_fullname
+
+-- ORDER BY total DESC
