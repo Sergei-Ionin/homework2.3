@@ -41,3 +41,19 @@
 --     join public.book b on b.book_id = cardbook.book_id
 
 -- where book_name like 'BCCC'
+
+-- Определите, какие книги на руках читателей.
+
+-- select
+
+--     reader_fullname,
+
+--     book_name
+
+-- from cardbook
+
+--     join public.reader r on r.reader_id = cardbook.reader_id
+
+--     join public.book b on b.book_id = cardbook.book_id
+
+-- where cardbook_off is null
