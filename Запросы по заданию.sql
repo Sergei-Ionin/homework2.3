@@ -187,3 +187,17 @@
 -- FROM lostbook
 
 -- WHERE book.book_id = lostbook.book_id
+
+-- Определить сумму потерянных книг по каждому кварталу в течение года
+
+-- SELECT sum(book_price)
+
+-- FROM book
+
+--     JOIN public.lostbook l ON book.book_id = l.book_id
+
+-- WHERE
+
+--     lostbook_data BETWEEN '2023-07-01' AND '2023-09-30'
+
+-- Здесь не смог понять как сделать, подскажите пожалуста
