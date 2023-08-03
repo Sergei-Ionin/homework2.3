@@ -57,3 +57,23 @@
 --     join public.book b on b.book_id = cardbook.book_id
 
 -- where cardbook_off is null
+
+-- Вывести количество должников на текущую дату.
+
+-- select
+
+--     reader_fullname,
+
+--     book_name
+
+-- from cardbook
+
+--     join public.reader r on r.reader_id = cardbook.reader_id
+
+--     join public.book b on b.book_id = cardbook.book_id
+
+-- where
+
+--     cardbook_on + interval '14 day' < current_date
+
+--     and cardbook_off is null
