@@ -25,3 +25,19 @@
 --     cardbook.cardbook_on < current_date
 
 --     AND cardbook_off IS NULL
+
+-- Определить читателей, у которых на руках определенная книга.
+
+-- select
+
+--     reader_fullname,
+
+--     book_name
+
+-- from cardbook
+
+--     join public.reader r on r.reader_id = cardbook.reader_id
+
+--     join public.book b on b.book_id = cardbook.book_id
+
+-- where book_name like 'BCCC'
