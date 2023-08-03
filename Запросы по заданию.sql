@@ -77,3 +77,29 @@
 --     cardbook_on + interval '14 day' < current_date
 
 --     and cardbook_off is null
+
+-- Книги какого издательства были самыми востребованными у читателей ? Отсортируйте издательства по убыванию востребованности книг
+
+-- SELECT
+
+--     count(cardbook.book_id) as total,
+
+--     book_name,
+
+--     isdat_name
+
+-- from cardbook
+
+--     JOIN public.book b ON b.book_id = cardbook.book_id
+
+--     JOIN public.isdat i ON i.isdat_id = b.book_isdat
+
+-- GROUP BY
+
+--     cardbook.book_id,
+
+--     book_name,
+
+--     isdat_name
+
+-- ORDER BY total DESC
